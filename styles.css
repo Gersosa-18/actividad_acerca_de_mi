@@ -1,0 +1,74 @@
+body {
+    background-color: #e2eedd;
+}
+/* Estilos -> header */
+header {
+    background-color: #ccf0aa;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Estilos -> subsecciones */
+#info-personal, #habilidades {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #98df6a;
+    border-radius: 10px;
+}
+
+/* Estilos -> títulos de subsecciones */
+#info-personal h2, #habilidades h2 {
+    font-size: 24px;
+}
+
+/* Estilos -> lista de habilidades */
+#habilidades ul {
+    list-style-type: square;
+}
+
+/* Estilos -> footer */
+footer {
+    background-color: #cecece;
+    color: #707070;
+    text-align: center;
+    padding: 30px;
+    margin: auto; /* Centra el pie de página horizontalmente */
+    /* position: absolute; */ /* Elimina esta línea */
+    bottom: 0;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* Podemos ajustar el padding del encabezado y las subsecciones */
+    header, #info-personal, #habilidades {
+        padding: 10px;
+        margin: auto
+    }
+    h1, h2 {
+        font-size: 12px;
+    }
+}
+
+/* Estilos para pantallas medianas (tabletas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header, #info-personal, #habilidades {
+        padding: 20px;
+        margin: auto
+    }
+    h1, h2 {
+        font-size: 22px;
+    }
+}
+/* Estilos Plantillas grandes y desktop */
+@media only screen and (min-width: 1025px) {
+    header, #info-personal, #habilidades {
+        padding: 30px;
+        margin: auto
+    }
+    h1, h2 {
+        font-size: 28px;
+    }
+}
